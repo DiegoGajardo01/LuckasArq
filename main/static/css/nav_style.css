@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.language {
+    position: relative;
+    display: inline-block; /* Permite que el contenedor ajuste su tamaño */
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.language a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.language a.lang-en {
+    display: none; /* Oculta la etiqueta EN por defecto */
+    position: absolute; /* Posiciona EN de manera absoluta */
+    top: 100%; /* Coloca EN justo debajo de ES */
+    left: 0; /* Alinea EN con ES */
+}
+
+.language:hover a.lang-en {
+    display: block; /* Muestra la etiqueta EN al hacer hover */
+}
+
+.language:hover a.lang-es {
+    opacity: 0.7; /* Opcional: cambia la opacidad de ES al hacer hover */
+}

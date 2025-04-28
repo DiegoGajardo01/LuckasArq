@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.language {
+    position: relative;
+    display: inline-block; /* Permite que el contenedor ajuste su tamaño */
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.language a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.language a.lang-en {
+    display: none; /* Oculta la etiqueta EN por defecto */
+    position: absolute; /* Posiciona EN de manera absoluta */
+    top: 100%; /* Coloca EN justo debajo de ES */
+    left: 0; /* Alinea EN con ES */
+}
+
+.language:hover a.lang-en {
+    display: block; /* Muestra la etiqueta EN al hacer hover */
+}
+
+.language:hover a.lang-es {
+    opacity: 0.7; /* Opcional: cambia la opacidad de ES al hacer hover */
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+/* SERVICIOS SECTION */
+.servicios {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.servicios-content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servicios-grid {
+    display: flex;
+    gap: 70px;
+    flex-grow: 1;
+}
+
+.servicio-item {
+    width: 208px;
+    height: 549px;
+    background-color: #8B4F2D;
+}
+
+.servicio-item:nth-child(2) {
+    background-color: #8B4F2D;
+}
+
+.servicio-item:nth-child(3) {
+    background-color: #8B4F2D;
+}
+
+.servicio-item:nth-child(4) {
+    background-color: #8B4F2D;
+}
+
+.servicios-title {
+    margin-left: 60px;
+    width: 208px; /* Ancho igual al de .servicio-item */
+    height: 549px; /* Altura igual a la de .servicio-item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios-title h2 {
+    writing-mode: vertical-rl; /* Cambiado para que el texto esté vertical */
+    text-orientation: mixed; /* Mantiene la orientación del texto */
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: rotate(180deg); /* Mantener la rotación si es necesario */
+}
+
+/* FOOTER */
+footer {
+    padding: 15px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #666666;
+}

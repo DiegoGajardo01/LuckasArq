@@ -1,0 +1,27 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCKASARQ</title>
+    <link rel="stylesheet" href="{% static 'css/nav_style.css' %}">
+</head>
+
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/proyectos/">Proyectos</a>
+                <a href="/contacto/">Contacto</a>
+                <div class="language">
+                    <a href="" class="lang-es">ES</a>
+                    <a href="" class="lang-en">EN</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+{% block content %}
+{% endblock %}
