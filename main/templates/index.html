@@ -24,24 +24,60 @@
     </div>
 </header>
 <main>
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <h1>LUCKASARQ</h1>
-        </div>
-        <img src="{% static 'img/bg.png' %}" alt="Casa Moderna Arquitectura" class="hero-image">
+    <section class="hero-container">
+        <img src="{% static 'img/bg.png' %}" alt="Fondo arquitectónico" class="hero-background">
+        <h1 class="hero-title">LUCKASARQ</h1>
+        <img src="{% static 'img/recorte.png' %}" alt="Casa arquitectónica" class="hero-house-overlay">
     </section>
 
     <section id="servicios" class="servicios">
         <div class="container">
-            <div class="servicios-content">
-                <div class="servicios-grid">
-                    <div class="servicio-item"></div>
-                    <div class="servicio-item"></div>
-                    <div class="servicio-item"></div>
-                    <div class="servicio-item"></div>
+            <div class="servicios-grid">
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B4F2D" stroke-width="2">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3>Diseño Arquitectónico</h3>
+                    <p>Creamos diseños personalizados que reflejan su estilo y necesidades específicas.</p>
                 </div>
-                <div class="servicios-title">
-                    <h2>SERVICIOS</h2>
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B4F2D" stroke-width="2">
+                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                            <path d="M12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                            <path d="M12 12v6"></path>
+                        </svg>
+                    </div>
+                    <h3>Supervisión de Obra</h3>
+                    <p>Garantizamos que cada detalle de su proyecto se ejecute según las especificaciones.</p>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B4F2D" stroke-width="2">
+                            <path d="M3 3v18h18"></path>
+                            <path d="M18 3v18"></path>
+                            <rect x="8" y="10" width="6" height="8"></rect>
+                        </svg>
+                    </div>
+                    <h3>Diseño de Interiores</h3>
+                    <p>Transformamos espacios con soluciones estéticas y funcionales para cada ambiente.</p>
+                </div>
+                <div class="servicio-item">
+                    <div class="servicio-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#8B4F2D" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Arquitectura Sostenible</h3>
+                    <p>Implementamos principios ecológicos para crear edificaciones eficientes y responsables.</p>
+                </div>
+                <div>
+                    <h2 class="servicios-title">SERVICIOS</h2>
                 </div>
             </div>
         </div>
