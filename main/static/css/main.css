@@ -191,7 +191,7 @@ nav {
 /* FOOTER */
 footer {
     padding: 15px 0;
-    background-color: #c5c5c5;
+    background-color: #474747;
     border-top: 1px solid #eeeeee;
 }
 
@@ -203,7 +203,7 @@ footer {
 
 .footer-content p {
     font-size: 12px;
-    color: #666666;
+    color: #ffffff;
 }
 
 .social-icons {
@@ -212,5 +212,5 @@ footer {
 }
 
 .social-icons a {
-    color: #666666;
+    color: #ffffff;
 }
