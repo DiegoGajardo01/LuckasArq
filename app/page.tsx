@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-6 sm:p-12 md:p-24">
       <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 text-center">LuckasArq</h1>
       <p className="text-lg sm:text-xl md:text-2xl text-gray-600 text-center">
-        👷👨‍💻 Esto es entorno dev 👨‍💻👷
+        👷👨‍💻 Bye 👨‍💻👷
       </p>
       <footer>
         <div className="fixed bottom-4 right-4 flex space-x-4">
