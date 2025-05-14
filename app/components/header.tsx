@@ -10,17 +10,17 @@ const Header: React.FC = () => {
             <Link href="/" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
               Home
             </Link>
-            <Link href="/proyectos" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
+            <Link href="/proyectos" className="text-black font-extrabold text-sm hover:opacity-70 transition-opacity">
               Proyectos
             </Link>
-            <Link href="/contacto" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
+            <Link href="/contacto" className="text-black font-extrabold text-sm hover:opacity-70 transition-opacity">
               Contacto
             </Link>
             <div className="relative ml-4 group">
-              <Link href="#" className="text-black font-bold text-sm hover:opacity-70 transition-all">
+              <Link href="#" className="text-black font-extrabold text-sm hover:opacity-70 transition-all">
                 ES
               </Link>
-              <Link href="#" className="absolute top-full left-0 hidden group-hover:block text-black font-bold text-sm hover:opacity-70 transition-all">
+              <Link href="#" className="absolute top-full left-0 hidden group-hover:block text-black font-extrabold text-sm hover:opacity-70 transition-all">
                 EN
               </Link>
             </div>
