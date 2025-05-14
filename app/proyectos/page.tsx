@@ -1,5 +1,5 @@
 // app/proyectos/page.tsx
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function Proyectos() {
   return (
