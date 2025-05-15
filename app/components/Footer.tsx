@@ -14,6 +14,7 @@ const Footer: React.FC = () => {
               href="https://www.instagram.com/luckas.arq" 
               aria-label="Instagram" 
               className="text-white hover:text-gray-300 transition-colors"
+              target="_blank"
             >
               <svg 
                 width="24" 
