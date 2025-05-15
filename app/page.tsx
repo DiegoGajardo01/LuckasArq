@@ -1,3 +1,4 @@
+
 import Image from "next/image"
 import Services from "./components/services/Services"
 
@@ -6,17 +7,19 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative h-screen">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 select-none pointer-events-none">
           <Image src="/img/bg.png" alt="Background" fill style={{ objectFit: "cover" }} priority />
         </div>
 
         {/* Hero Content */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-black text-center text-black">LUCKASARQ</h1>
+          <div className="-mt-67">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-black text-center text-black select-text pointer-events-auto">LUCKASARQ</h1>
+          </div>
         </div>
 
         {/* Recorte overlay */}
-        <div className="absolute inset-0 z-20">
+        <div className="absolute inset-0 z-20 select-none pointer-events-none">
           <Image src="/img/recorte.png" alt="Background" fill style={{ objectFit: "cover" }} priority />
         </div>
       </section>
