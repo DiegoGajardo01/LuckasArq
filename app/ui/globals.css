@@ -2,8 +2,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #181717;
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -14,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #181717;
     --foreground: #ededed;
   }
 }
@@ -24,3 +25,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom writing mode for vertical text */
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.text-orientation-mixed {
+  text-orientation: mixed;
+}
+
+
