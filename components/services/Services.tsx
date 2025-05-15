@@ -1,4 +1,4 @@
-import ServiceItem from "./ServiceItem"
+import ServiceItem from "@/components/services/ServiceItem"
 
 export default function Services() {
   const services = [
