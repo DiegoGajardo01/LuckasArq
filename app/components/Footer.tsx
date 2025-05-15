@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             <Link 
               href="https://www.instagram.com/luckas.arq" 
               aria-label="Instagram" 
-              className="text-white hover:text-gray-300 transition-colors"
+              className="text-black hover:text-gray-800 transition-colors"
               target="_blank"
             >
               <svg 
