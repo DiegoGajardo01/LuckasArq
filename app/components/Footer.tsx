@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <p className="text-xs text-white">
             © 2025 LuckasArq. Todos los derechos reservados.
           </p>
-          <div className="fixed bottom-4 right-4 flex space-x-4">
+          <div className="fixed bottom-4 right-4 flex space-x-4 z-21">
             <Link 
               href="https://www.instagram.com/luckas.arq" 
               aria-label="Instagram" 
