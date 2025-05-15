@@ -15,11 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "LuckasArq",
+  description: "Página web de Luckas Gajardo, arquitecto Chileno",
   icons: {
     icon: '/favicon.ico',
   },
+  keywords: "Arquitectura, renders, urbanismo, interiorismo"
 };
 
 export default function RootLayout({
