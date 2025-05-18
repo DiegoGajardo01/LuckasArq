@@ -18,7 +18,7 @@ export default function Home() {
             <div className="flex flex-row items-start gap-4">
               {/* Logo */}
               <div className="mb-4">
-                <Image src="/img/logo.png" alt="Logo" width={250} height={100} />
+                <Image src="/img/logo.png" alt="Logo" width={150} height={50} />
               </div>
               {/* Columna ARQ */}
               <div className="flex flex-col items-center">
