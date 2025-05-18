@@ -12,7 +12,7 @@ export default function Services() {
         </div>
       ),
       title: "Diseño Arquitectónico",
-      description: "Creamos diseños personalizados que reflejan su estilo y necesidades específicas.",
+      description: "Diseño espacios habitables de diversas escalas, priorizando la simplicidad y precisión para crear entornos funcionales.",
     },
     {
       icon: (
@@ -25,7 +25,7 @@ export default function Services() {
         </div>
       ),
       title: "Diseño de Interiores",
-      description: "Garantizamos que cada detalle de su proyecto se ejecute según las especificaciones.",
+      description: "Diseño y remodelo interiores, mejorando funcionalidad, estética y confort con un enfoque en la calidad del habitar.",
     },
     {
       icon: (
@@ -38,7 +38,7 @@ export default function Services() {
         </div>
       ),
       title: "Tramites DOM",
-      description: "Transformamos espacios con soluciones estéticas y funcionales para cada ambiente.",
+      description: "Gestiono los permisos municipales cuando el cliente lo requiere, facilitando un proceso claro, ágil y sin complicaciones.",
     },
     {
       icon: (

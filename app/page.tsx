@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 import Services from "@/components/services/Services"
 
@@ -12,15 +11,34 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="-mt-67">
-            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-black text-center text-black select-text pointer-events-auto">LUCKASARQ</h1>
-          </div>
-        </div>
+        <div className="relative z-10 flex flex-col items-end justify-center h-full pr-10">
 
-        {/* Recorte overlay */}
-        <div className="absolute inset-0 z-20 select-none pointer-events-none">
-          <Image src="/img/recorte.png" alt="Background" fill style={{ objectFit: "cover" }} priority />
+          {/* Header Rows */}
+          <div className="absolute right-20 top-1/4">
+            <div className="flex flex-row items-start gap-4">
+              {/* Logo */}
+              <div className="mb-4">
+                <Image src="/img/logo.png" alt="Logo" width={250} height={100} />
+              </div>
+              {/* Columna ARQ */}
+              <div className="flex flex-col items-center">
+                {["A", "R", "Q"].map((letter, index) => (
+                  <h1 key={index} className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-black">
+                    {letter}
+                  </h1>
+                ))}
+              </div>
+              
+              {/* Columna LUCKAS */}
+              <div className="flex flex-col items-center">
+                {["L", "U", "C", "K", "A", "S"].map((letter, index) => (
+                  <h1 key={index} className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-ligth text-black">
+                    {letter}
+                  </h1>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
