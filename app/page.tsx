@@ -1,25 +1,53 @@
-//import Image from "next/image";
-
-import Link from "next/link";
+import Image from "next/image"
+import Services from "@/components/services/Services"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-6 sm:p-12 md:p-24">
-      <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 text-center">LuckasArq</h1>
-      <p className="text-lg sm:text-xl md:text-2xl text-gray-600 text-center">
-        👷👨‍💻 Página en construcción 👨‍💻👷
-      </p>
-      <footer>
-        <div className="fixed bottom-4 right-4 flex space-x-4">
-          <Link href="https://www.instagram.com/luckas.arq" aria-label="Instagram" className="text-white hover:text-gray-400 transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6 sm:w-7 sm:h-7">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </Link>
+    <>
+      {/* Hero Section */}
+      <section className="relative h-screen">
+        <div className="absolute inset-0 z-0 select-none pointer-events-none">
+          <Image src="/img/bg.png" alt="Background" fill style={{ objectFit: "cover" }} priority />
         </div>
-      </footer>
-    </main>
-  );
+
+        {/* Hero Content */}
+        <div className="relative z-10 flex flex-col items-end justify-center h-full pr-10">
+
+          {/* Header Rows */}
+          <div className="absolute right-20 top-1/4">
+            <div className="flex flex-row items-start gap-4">
+              {/* Logo */}
+              <div className="mb-4">
+                <Image src="/img/logo.png" alt="Logo" width={150} height={50} />
+              </div>
+              {/* Columna ARQ */}
+              <div className="flex flex-col items-center">
+                {["A", "R", "Q"].map((letter, index) => (
+                  <h1 key={index} className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-black">
+                    {letter}
+                  </h1>
+                ))}
+              </div>
+              
+              {/* Columna LUCKAS */}
+              <div className="flex flex-col items-center">
+                {["L", "U", "C", "K", "A", "S"].map((letter, index) => (
+                  <h1 key={index} className="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-ligth text-black">
+                    {letter}
+                  </h1>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - With taller cards */}
+      <section className="bg-[#f9f9f9] py-24 md:py-32 lg:py-40">
+        <div className="container mx-auto px-4 md:px-8 lg:px-12">
+          <Services />
+        </div>
+      </section>
+    </>
+  )
 }

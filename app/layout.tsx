@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./ui/globals.css";
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,11 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "LuckasArq",
+  description: "Página web de Luckas Gajardo, arquitecto Chileno",
   icons: {
     icon: '/favicon.ico',
   },
+  keywords: "Arquitectura, renders, urbanismo, interiorismo"
 };
 
 export default function RootLayout({
@@ -30,7 +33,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
