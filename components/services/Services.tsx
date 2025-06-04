@@ -13,6 +13,8 @@ export default function Services() {
       ),
       title: "Diseño Arquitectónico",
       description: "Diseño espacios habitables de diversas escalas, priorizando la simplicidad y precisión para crear entornos funcionales.",
+      linkServices:"/servicios/arquitectonico",
+      
     },
     {
       icon: (
@@ -26,6 +28,7 @@ export default function Services() {
       ),
       title: "Diseño de Interiores",
       description: "Diseño y remodelo interiores, mejorando funcionalidad, estética y confort con un enfoque en la calidad del habitar.",
+      linkServices:"/servicios/interiores",
     },
     {
       icon: (
@@ -39,6 +42,7 @@ export default function Services() {
       ),
       title: "Tramites DOM",
       description: "Gestiono los permisos municipales cuando el cliente lo requiere, facilitando un proceso claro, ágil y sin complicaciones.",
+      linkServices:"/servicios/tramites-dom",
     },
     {
       icon: (
@@ -52,6 +56,7 @@ export default function Services() {
       ),
       title: "Otros",
       description: "Implementamos principios ecológicos para crear edificaciones eficientes y responsables.",
+      linkServices:"/servicios/otros",
     },
   ]
 
@@ -59,7 +64,7 @@ export default function Services() {
     <div className="w-full py-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {services.map((service, index) => (
-          <ServiceItem key={index} icon={service.icon} title={service.title} description={service.description} />
+          <ServiceItem key={index} icon={service.icon} title={service.title} description={service.description} linkServices={service.linkServices}/>
         ))}
         <div className="flex items-center justify-center">
           <h2 className="writing-vertical-rl text-orientation-mixed rotate-180 text-5xl font-black tracking-wider text-black">
