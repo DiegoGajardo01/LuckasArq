@@ -13,9 +13,6 @@ const Header: React.FC = () => {
             <Link href="/proyectos" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
               Proyectos
             </Link>
-            <Link href="/contacto" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
-              Contacto
-            </Link>
             <div className="relative ml-4 group">
               <Link href="#" className="text-black font-bold text-sm hover:opacity-70 transition-all">
                 ES
