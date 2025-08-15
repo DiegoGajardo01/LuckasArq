@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Services from "@/components/services/Services"
 import ServiciosDer from "@/components/services/servicios-cardsizq"
 import ServiciosIzq from "@/components/services/servicios-cardsder"
 import Contacto from "@/components/contacto"
