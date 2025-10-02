@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface ServiciosCardsProps {
   rutaImagen: string;
@@ -24,7 +25,13 @@ const ServiciosDer: React.FC<ServiciosCardsProps> = ({ rutaImagen, title, descri
 
         {/* Columna derecha: imagen */}
         <div className="bg-gray-100 flex items-center justify-center w-full h-full select-none pointer-events-none">
-          <img src={rutaImagen} alt="Imagen" className="w-full h-full object-cover" />
+          <Image 
+            src={rutaImagen} 
+            alt="Imagen" 
+            width={400}
+            height={300}
+            className="w-full h-full object-cover" 
+          />
         </div>
 
       </div>

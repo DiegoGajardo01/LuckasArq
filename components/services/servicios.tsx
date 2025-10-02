@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // Tipos para el contenido de texto
 interface TextContent {
@@ -77,9 +78,11 @@ const Section: React.FC<SectionProps> = ({ data, imagePosition }) => {
         {/* Imagen */}
         <div className={`relative h-full ${isImageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
           <div className={`h-full overflow-hidden ${getBorderRadius()}`}>
-            <img 
+            <Image 
               src={data.image} 
               alt={data.title}
+              width={800}
+              height={600}
               className="w-full h-full object-cover"
             />
             {/* Logo sutil en la esquina */}

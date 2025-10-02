@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useToast } from "@/hooks/use-toast"
 import { Loader2 } from "lucide-react"
@@ -106,7 +105,7 @@ export default function ContactForm() {
       } else {
         throw new Error("Failed to send message")
       }
-    } catch (error) {
+    } catch {
       toast({
         title: "Error",
         description: "No se pudo enviar el mensaje. Por favor intenta de nuevo.",
