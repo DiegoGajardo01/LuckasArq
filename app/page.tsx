@@ -57,24 +57,29 @@ export default function Home() {
           <ServiciosDer
             rutaImagen="/img/renders/render5.png"
             title="Diseño Arquitectónico" 
-            description="Diseño espacios habitables de diversas escalas, priorizando la simplicidad y precisión para crear entornos funcionales."
+            description="Diseñamos una arquitectura esencial que equilibra Habitabilidad, Viabilidad Técnica y cumplimiento total de la OGUC."
           />
 
           <ServiciosIzq
             rutaImagen="/img/renders/interior1.png"
             title="Diseño de Interiores" 
-            description="Diseño y remodelo interiores, mejorando funcionalidad, estética y confort con un enfoque en la calidad del habitar."
+            description="Construimos atmósferas con materiales nobles que maximizan el confort y la funcionalidad del espacio."
           />
 
-<         ServiciosDer
+          <ServiciosDer
             rutaImagen="/img/renders/render3.png"
-            title="Tramites DOM" 
-            description="Gestiono los permisos municipales cuando el cliente lo requiere, facilitando un proceso claro, ágil y sin complicaciones."
+            title="Regularización de Viviendas" 
+            description="Formalizamos tu construcción ante la DOM. Partiendo con un estudio de Factibilidad para definir la vía legal más rápida."
           />
           <ServiciosIzq
             rutaImagen="/img/renders/pilar.png"
-            title="Otros" 
-            description="Implementamos principios ecológicos para crear edificaciones eficientes y responsables."
+            title="Levantamientos 3D" 
+            description="Realizamos Levantamiento Fotogramétrico con Drones, una técnica que usa miles de fotografías aéreas georreferenciadas para construir un Modelo 3D exacto de tu terreno y edificación."
+          />
+          <ServiciosDer
+            rutaImagen="/img/renders/render3.png"
+            title="Proyectos Eléctricos SEC" 
+            description="Diseñamos y construimos proyectos eléctricos certificados por especialistas SEC, priorizando la economía y la optimización energética de tu instalación."
           />
         </div>
       </section>
