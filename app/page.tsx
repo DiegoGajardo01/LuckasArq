@@ -71,11 +71,13 @@ export default function Home() {
             title="Regularización de Viviendas" 
             description="Formalizamos tu construcción ante la DOM. Partiendo con un estudio de Factibilidad para definir la vía legal más rápida."
           />
+
           <ServiciosIzq
-            rutaImagen="/img/renders/pilar.png"
+            rutaImagen="/img/dron.jpg"
             title="Levantamientos 3D" 
             description="Realizamos Levantamiento Fotogramétrico con Drones, una técnica que usa miles de fotografías aéreas georreferenciadas para construir un Modelo 3D exacto de tu terreno y edificación."
           />
+
           <ServiciosDer
             rutaImagen="/img/renders/render3.png"
             title="Proyectos Eléctricos SEC" 
