@@ -200,7 +200,9 @@ export default function ContactForm() {
                 <option value="">Selecciona un tema</option>
                 <option value="architectural-design">Diseño Arquitectónico</option>
                 <option value="interior-design">Diseño de Interiores</option>
-                <option value="municipal-procedures">Trámites Municipales</option>
+                <option value="housing-regularization">Regularización de Viviendas</option>
+                <option value="3d-surveys">Levantamientos 3D</option>
+                <option value="electrical-projects">Proyectos Eléctricos SEC</option>
                 <option value="other">Otro</option>
               </select>
             </div>

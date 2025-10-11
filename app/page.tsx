@@ -57,7 +57,7 @@ export default function Home() {
           <ServiciosDer
             rutaImagen="/img/renders/render5.png"
             title="Diseño Arquitectónico" 
-            description="Diseñamos una arquitectura esencial que equilibra Habitabilidad, Viabilidad Técnica y cumplimiento total de la OGUC."
+            description="Diseñamos espacios Residenciales y Comerciales que son el eco de tu visión. Fusionamos la rigurosidad técnica con la sensibilidad de la luz, el material y el contexto."
           />
 
           <ServiciosIzq
@@ -67,19 +67,19 @@ export default function Home() {
           />
 
           <ServiciosDer
-            rutaImagen="/img/renders/render3.png"
+            rutaImagen="/img/regularizacion.jpg"
             title="Regularización de Viviendas" 
-            description="Formalizamos tu construcción ante la DOM. Partiendo con un estudio de Factibilidad para definir la vía legal más rápida."
+            description="Formalizamos tu construcción ante la DOM (Dirección de Obras Municipales). Evaluamos las posibles vías de regularización bajo normativa OGUC para agilizar el trámite."
           />
 
           <ServiciosIzq
             rutaImagen="/img/dron.jpg"
             title="Levantamientos 3D" 
-            description="Realizamos Levantamiento Fotogramétrico con Drones, una técnica que usa miles de fotografías aéreas georreferenciadas para construir un Modelo 3D exacto de tu terreno y edificación."
+            description="Realizamos Levantamientos Fotogramétricos con Drones, una técnica que usa miles de fotografías aéreas georreferenciadas para construir un Modelo 3D exacto de tu terreno y edificación."
           />
 
           <ServiciosDer
-            rutaImagen="/img/renders/render3.png"
+            rutaImagen="/img/electro.png"
             title="Proyectos Eléctricos SEC" 
             description="Diseñamos y construimos proyectos eléctricos certificados por especialistas SEC, priorizando la economía y la optimización energética de tu instalación."
           />
