@@ -2,8 +2,10 @@
 'use client';
 
 import { useState } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Contacto() {
+  const { t } = useLanguage()
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -23,7 +25,7 @@ export default function Contacto() {
     e.preventDefault();
     // Aquí iría la lógica para enviar el formulario
     console.log('Datos del formulario:', formData);
-    alert('Mensaje enviado correctamente');
+    alert(t.contactPage.form.success);
     // Resetear el formulario
     setFormData({
       nombre: '',
@@ -36,13 +38,13 @@ export default function Contacto() {
   return (
     <main className="pt-24 pb-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-10 text-center">Contacto</h1>
+        <h1 className="text-4xl font-bold mb-10 text-center">{t.contactPage.title}</h1>
         
         <div className="max-w-4xl mx-auto flex flex-col lg:flex-row gap-12">
           {/* Información de contacto */}
           <div className="lg:w-2/5">
             <div className="bg-gray-100 p-8 rounded-lg">
-              <h2 className="text-2xl font-bold mb-6">Información de contacto</h2>
+              <h2 className="text-2xl font-bold mb-6">{t.contactPage.contactInfo.title}</h2>
               
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
@@ -53,8 +55,8 @@ export default function Contacto() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium">Dirección</p>
-                    <p className="text-gray-600">Buenos Aires, Argentina</p>
+                    <p className="font-medium">{t.contactPage.contactInfo.address}</p>
+                    <p className="text-gray-600">{t.contactPage.contactInfo.addressValue}</p>
                   </div>
                 </div>
                 
@@ -65,8 +67,8 @@ export default function Contacto() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium">Teléfono</p>
-                    <p className="text-gray-600">+54 9 11 1234-5678</p>
+                    <p className="font-medium">{t.contactPage.contactInfo.phone}</p>
+                    <p className="text-gray-600">{t.contactPage.contactInfo.phoneValue}</p>
                   </div>
                 </div>
                 
@@ -78,8 +80,8 @@ export default function Contacto() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium">Email</p>
-                    <p className="text-gray-600">contacto@luckasarq.com</p>
+                    <p className="font-medium">{t.contactPage.contactInfo.email}</p>
+                    <p className="text-gray-600">{t.contactPage.contactInfo.emailValue}</p>
                   </div>
                 </div>
                 
@@ -92,8 +94,8 @@ export default function Contacto() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium">Horario de atención</p>
-                    <p className="text-gray-600">Lun - Vie: 9:00 - 18:00</p>
+                    <p className="font-medium">{t.contactPage.contactInfo.schedule}</p>
+                    <p className="text-gray-600">{t.contactPage.contactInfo.scheduleValue}</p>
                   </div>
                 </div>
               </div>
@@ -120,11 +122,11 @@ export default function Contacto() {
           {/* Formulario de contacto */}
           <div className="lg:w-3/5">
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold mb-6">Envíanos un mensaje</h2>
+              <h2 className="text-2xl font-bold mb-6">{t.contactPage.form.title}</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">{t.contactPage.form.name}</label>
                   <input
                     type="text"
                     id="nombre"
@@ -137,7 +139,7 @@ export default function Contacto() {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">{t.contactPage.form.email}</label>
                   <input
                     type="email"
                     id="email"
@@ -151,7 +153,7 @@ export default function Contacto() {
               </div>
               
               <div className="mb-6">
-                <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">{t.contactPage.form.phone}</label>
                 <input
                   type="tel"
                   id="telefono"
@@ -163,7 +165,7 @@ export default function Contacto() {
               </div>
               
               <div className="mb-6">
-                <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">{t.contactPage.form.message}</label>
                 <textarea
                   id="mensaje"
                   name="mensaje"
@@ -179,7 +181,7 @@ export default function Contacto() {
                 type="submit"
                 className="inline-block px-6 py-3 bg-[#8B4F2D] text-white font-medium rounded-md hover:bg-[#704026] transition-colors duration-300"
               >
-                Enviar mensaje
+                {t.contactPage.form.send}
               </button>
             </form>
           </div>
