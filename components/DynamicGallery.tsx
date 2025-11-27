@@ -159,9 +159,16 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
   /**
    * Crea filas variadas con diferentes cantidades de imágenes
    * Prioriza el patrón de variación sobre el agrupamiento por aspecto
+   * En móvil: siempre 1 imagen por fila (estilo Instagram)
    */
   const createVariedRows = (images: ProcessedImage[]): ProcessedImage[][] => {
     if (images.length === 0 || windowWidth === 0) return []
+
+    // En móvil (< 640px), siempre 1 imagen por fila (estilo Instagram)
+    const isMobile = windowWidth < 640
+    if (isMobile) {
+      return images.map(img => [img])
+    }
 
     const rows: ProcessedImage[][] = []
     
@@ -239,11 +246,19 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
 
   // Calcular el ancho de cada imagen en una fila
   const calculateImageWidth = (rowLength: number, aspectRatio: AspectRatio): number => {
+    const isMobile = windowWidth < 640
+    
+    // En móvil, siempre ancho completo (menos padding)
+    if (isMobile) {
+      const padding = 16
+      return windowWidth - (padding * 2)
+    }
+    
     const maxPerRow = getMaxPerRow(aspectRatio, windowWidth)
     const itemsInRow = Math.min(rowLength, maxPerRow)
     const totalGaps = (itemsInRow - 1) * GAP
-    // Padding lateral: 16px en móvil, 24px en tablet, 32px en desktop
-    const padding = windowWidth < 640 ? 16 : windowWidth < 1024 ? 24 : 32
+    // Padding lateral: 24px en tablet, 32px en desktop
+    const padding = windowWidth < 1024 ? 24 : 32
     const availableWidth = windowWidth - totalGaps - (padding * 2)
     const imageWidth = availableWidth / itemsInRow
     
