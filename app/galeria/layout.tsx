@@ -1,30 +1,41 @@
 import { Metadata } from 'next'
+import { ReactNode } from 'react'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://luckasarq.com'
 
 export const metadata: Metadata = {
-  title: "Galería - Portfolio de Proyectos",
-  description: "Explora nuestra galería de proyectos arquitectónicos: diseños residenciales, comerciales, renders y fotografías de obras realizadas por Luckas Gajardo, arquitecto profesional en Chile.",
+  title: "Galería de Proyectos Arquitectónicos - Portfolio Visual | LuckasArq",
+  description: "Explora nuestra galería completa de proyectos arquitectónicos: diseños residenciales, comerciales, renders 3D, fotografías de obras realizadas y diseño de interiores. Portfolio visual de Luckas Gajardo, arquitecto profesional en Chile especializado en arquitectura moderna, diseño de interiores y regularización de viviendas.",
   keywords: [
     'galería arquitectura',
     'portfolio arquitectónico',
-    'proyectos arquitectónicos',
-    'renders arquitectura',
+    'proyectos arquitectónicos chile',
+    'renders arquitectura 3D',
     'fotografías arquitectura',
     'obras arquitectónicas',
-    'arquitectura chile'
+    'arquitectura chile',
+    'diseño arquitectónico',
+    'diseño de interiores',
+    'arquitectura residencial',
+    'arquitectura comercial',
+    'galería de proyectos',
+    'portfolio visual arquitecto',
+    'renders profesionales',
+    'arquitectura moderna chile',
+    'diseño de casas',
+    'proyectos arquitectónicos realizados'
   ],
   openGraph: {
-    title: "Galería - Portfolio de Proyectos | LuckasArq",
-    description: "Explora nuestra galería de proyectos arquitectónicos: diseños residenciales, comerciales, renders y fotografías de obras realizadas.",
+    title: "Galería de Proyectos Arquitectónicos - Portfolio Visual | LuckasArq",
+    description: "Explora nuestra galería completa de proyectos arquitectónicos: diseños residenciales, comerciales, renders 3D y fotografías de obras realizadas por Luckas Gajardo, arquitecto profesional en Chile.",
     url: `${siteUrl}/galeria`,
     siteName: 'LuckasArq',
     images: [
       {
-        url: `${siteUrl}/img/og-image.jpg`,
+        url: `${siteUrl}/img/imgog.jpeg`,
         width: 1200,
         height: 630,
-        alt: 'Galería de Proyectos Arquitectónicos - LuckasArq',
+        alt: 'Galería de Proyectos Arquitectónicos - LuckasArq - Portfolio Visual',
       },
     ],
     locale: 'es_CL',
@@ -32,12 +43,27 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Galería - Portfolio de Proyectos | LuckasArq",
-    description: "Explora nuestra galería de proyectos arquitectónicos: diseños residenciales, comerciales, renders y fotografías de obras realizadas.",
-    images: [`${siteUrl}/img/og-image.jpg`],
+    title: "Galería de Proyectos Arquitectónicos - Portfolio Visual | LuckasArq",
+    description: "Explora nuestra galería completa de proyectos arquitectónicos: diseños residenciales, comerciales, renders 3D y fotografías de obras realizadas.",
+    images: [`${siteUrl}/img/imgog.jpeg`],
   },
   alternates: {
     canonical: `${siteUrl}/galeria`,
+    languages: {
+      'es-CL': `${siteUrl}/galeria`,
+      'en-US': `${siteUrl}/en/galeria`,
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 

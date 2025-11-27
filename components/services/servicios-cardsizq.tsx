@@ -17,7 +17,7 @@ const ServiciosIzq: React.FC<ServiciosCardsProps> = ({ rutaImagen, title, descri
           <div className="bg-gray-100 w-full h-64 md:h-full select-none pointer-events-none order-1 md:order-1">
             <Image 
               src={rutaImagen} 
-              alt="Imagen" 
+              alt={`${title} - Servicio de arquitectura profesional LuckasArq`}
               width={400}
               height={300}
               className="w-full h-full object-cover" 

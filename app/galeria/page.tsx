@@ -1,6 +1,7 @@
 "use client"
 
 import DynamicGallery from "@/components/DynamicGallery"
+import GalleryStructuredData from "@/components/GalleryStructuredData"
 import { useLanguage } from "@/contexts/LanguageContext"
 
 // Array de imágenes de ejemplo - Reemplaza con tus imágenes reales
@@ -20,17 +21,24 @@ export default function Galeria() {
   const { t } = useLanguage()
 
   return (
-    <main className="pt-24 pb-16 bg-[#f9f9f9] min-h-screen">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 mb-8">
-        <h1 className="text-4xl md:text-5xl text-black font-bold mb-4 text-center">
-          {t.gallery?.title || 'Galería'}
-        </h1>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto">
-          {t.gallery?.description || 'Explora nuestra colección de proyectos arquitectónicos'}
-        </p>
-      </div>
-      <DynamicGallery images={sampleImages} />
-    </main>
+    <>
+      <GalleryStructuredData images={sampleImages} />
+      <main className="pt-24 pb-16 bg-[#f9f9f9] min-h-screen">
+        <article className="container mx-auto px-4 md:px-6 lg:px-8 mb-8">
+          <header>
+            <h1 className="text-4xl md:text-5xl text-black font-bold mb-4 text-center">
+              {t.gallery?.title || 'Galería de Proyectos Arquitectónicos'}
+            </h1>
+            <p className="text-center text-gray-600 max-w-2xl mx-auto text-lg">
+              {t.gallery?.description || 'Explora nuestra colección de proyectos arquitectónicos, diseños residenciales, comerciales, renders 3D y fotografías de obras realizadas por LuckasArq.'}
+            </p>
+          </header>
+        </article>
+        <section aria-label="Galería de imágenes de proyectos arquitectónicos">
+          <DynamicGallery images={sampleImages} />
+        </section>
+      </main>
+    </>
   )
 }
 

@@ -8,13 +8,18 @@ import { useLanguage } from "@/contexts/LanguageContext"
 
 export default function Home() {
   const { t } = useLanguage()
-
   return (
     <>
       {/* Hero Section */}
       <section className="relative h-screen">
         <div className="absolute inset-0 z-0 select-none pointer-events-none">
-          <Image src="/img/bg.png" alt="Background" fill style={{ objectFit: "cover" }} priority />
+          <Image 
+            src="/img/bg.png" 
+            alt="Fondo arquitectónico moderno - LuckasArq, arquitecto profesional en Chile" 
+            fill 
+            style={{ objectFit: "cover" }} 
+            priority 
+          />
         </div>
 
         {/* Hero Content */}
@@ -25,7 +30,12 @@ export default function Home() {
             <div className="flex flex-row items-start gap-4">
               {/* Logo */}
               <div className="mb-4">
-                <Image src="/img/logo.png" alt="Logo" width={150} height={50} />
+                <Image 
+                  src="/img/logo.png" 
+                  alt="Logo LuckasArq - Arquitecto Profesional en Chile especializado en diseño arquitectónico" 
+                  width={150} 
+                  height={50} 
+                />
               </div>
               {/* Columna ARQ */}
               <div className="flex flex-col items-center">
@@ -51,7 +61,7 @@ export default function Home() {
 
       <section className="bg-[#f9f9f9] py-4 md:py-6 lg:py-8">
         <div className="container mx-auto px-4 md:px-8 lg:px-12 mt-8 md:mt-12">
-          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-wider text-black">{t.home.servicios}</h3>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-wider text-black">{t.home.servicios}</h2>
         </div>
       </section>
 

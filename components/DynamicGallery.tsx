@@ -320,7 +320,7 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
                   >
                     <Image
                       src={img.url}
-                      alt={`Imagen ${rowIndex + 1}-${imgIndex + 1} de la galería - ${img.aspectRatio}`}
+                      alt={`Proyecto arquitectónico ${rowIndex + 1}-${imgIndex + 1} - Diseño arquitectónico, render 3D o fotografía de obra realizada por LuckasArq - ${img.aspectRatio}`}
                       fill
                       className="object-cover"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
