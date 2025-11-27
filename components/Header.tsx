@@ -22,8 +22,8 @@ const Header: React.FC = () => {
             <Link href="/" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
               {t.nav.home}
             </Link>
-            <Link href="/proyectos" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
-              {t.nav.proyectos}
+            <Link href="/galeria" className="text-black font-bold text-sm hover:opacity-70 transition-opacity">
+              {t.nav.galeria}
             </Link>
             <div className="relative ml-4 group">
               <button
@@ -65,11 +65,11 @@ const Header: React.FC = () => {
                 {t.nav.home}
               </Link>
               <Link 
-                href="/proyectos" 
+                href="/galeria" 
                 className="text-black font-bold text-sm hover:opacity-70 transition-opacity"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t.nav.proyectos}
+                {t.nav.galeria}
               </Link>
               <div className="flex items-center gap-4">
                 <button

@@ -5,7 +5,7 @@ export const translations = {
     // Navigation
     nav: {
       home: 'Home',
-      proyectos: 'Proyectos',
+      galeria: 'Galería',
     },
     // Home Page
     home: {
@@ -71,6 +71,11 @@ export const translations = {
         errorSend: 'No se pudo enviar el mensaje. Por favor intenta de nuevo.',
       },
     },
+    // Gallery Page
+    gallery: {
+      title: 'Galería',
+      description: 'Explora nuestra colección de proyectos arquitectónicos',
+    },
     // Projects Page
     projects: {
       title: 'Nuestros Proyectos',
@@ -120,7 +125,7 @@ export const translations = {
     // Navigation
     nav: {
       home: 'Home',
-      proyectos: 'Projects',
+      galeria: 'Gallery',
     },
     // Home Page
     home: {
@@ -185,6 +190,11 @@ export const translations = {
         errorMessageLength: 'The message must be less than 1000 characters.',
         errorSend: 'Could not send message. Please try again.',
       },
+    },
+    // Gallery Page
+    gallery: {
+      title: 'Gallery',
+      description: 'Explore our collection of architectural projects',
     },
     // Projects Page
     projects: {
