@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import { ReactNode } from 'react'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://luckasarq.com'
 
