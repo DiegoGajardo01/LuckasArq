@@ -163,7 +163,7 @@ export default function ContactForm() {
           })
         }
       }
-    } catch (error) {
+    } catch {
       // Network errors or other issues
       toast({
         title: t.contact.messages.error,

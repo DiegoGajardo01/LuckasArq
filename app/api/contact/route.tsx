@@ -123,7 +123,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Insert data into Supabase
-    const { data, error } = await supabaseAdmin
+    const { error } = await supabaseAdmin
       .from('contact_submissions')
       .insert([sanitizedData])
       .select()
