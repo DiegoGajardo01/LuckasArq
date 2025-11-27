@@ -10,7 +10,7 @@ const sampleImages = [
   "/img/renders/cocina.png",
   "/img/renders/4kb3035.png",
   "/img/renders/cubo.png",
-  "/img/renders/RENDER 2.JPEG",
+  "/img/renders/RENDER2.JPEG",
   "/img/renders/render5.png",
   "/img/renders/render4.png",
   "/img/renders/render5.png",
