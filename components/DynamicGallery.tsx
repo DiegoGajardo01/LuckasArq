@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import Image from 'next/image'
 
 // Tipos de relación de aspecto
@@ -112,7 +112,7 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
           // Crear una imagen para obtener sus dimensiones
           const img = new window.Image()
           
-          await new Promise<void>((resolve, reject) => {
+          await new Promise<void>((resolve) => {
             img.onload = () => {
               const aspectRatio = classifyAspectRatio(img.width, img.height)
               processed.push({
@@ -137,7 +137,7 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
             }
             img.src = url
           })
-        } catch (error) {
+        } catch {
           // En caso de error, agregar con valores por defecto
           processed.push({
             url,
@@ -161,7 +161,7 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
    * Prioriza el patrón de variación sobre el agrupamiento por aspecto
    * En móvil: siempre 1 imagen por fila (estilo Instagram)
    */
-  const createVariedRows = (images: ProcessedImage[]): ProcessedImage[][] => {
+  const createVariedRows = useCallback((images: ProcessedImage[]): ProcessedImage[][] => {
     if (images.length === 0 || windowWidth === 0) return []
 
     // En móvil (< 640px), siempre 1 imagen por fila (estilo Instagram)
@@ -180,12 +180,11 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
 
     while (imageIndex < images.length) {
       // Obtener el target count del patrón
-      let targetCount = variationPatterns[patternIndex % variationPatterns.length]
+      const targetCount = variationPatterns[patternIndex % variationPatterns.length]
       patternIndex++
 
       // Crear una nueva fila
       const currentRow: ProcessedImage[] = []
-      let rowAspect: AspectRatio | null = null
       let maxForRow = Infinity
       
       // Agregar imágenes hasta alcanzar el target del patrón
@@ -196,7 +195,6 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
         // Si la fila está vacía, siempre agregar y establecer el aspecto base
         if (currentRow.length === 0) {
           currentRow.push(img)
-          rowAspect = img.aspectRatio
           maxForRow = getMaxPerRow(img.aspectRatio, windowWidth)
           imageIndex++
         } else {
@@ -234,7 +232,7 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
     }
 
     return rows
-  }
+  }, [windowWidth])
 
   // Organizar imágenes en filas variadas
   const organizedRows = useMemo(() => {
@@ -242,7 +240,7 @@ export default function DynamicGallery({ images }: DynamicGalleryProps) {
 
     // Crear filas variadas mezclando las imágenes
     return createVariedRows(processedImages)
-  }, [processedImages, windowWidth])
+  }, [processedImages, windowWidth, createVariedRows])
 
   // Calcular el ancho de cada imagen en una fila
   const calculateImageWidth = (rowLength: number, aspectRatio: AspectRatio): number => {
