@@ -33,6 +33,10 @@ export const metadata: Metadata = {
     'diseño arquitectónico',
     'diseño de interiores',
     'arquitecto chileno',
+    'arquitecto valparaiso',
+    'arquitectos valparaiso',
+    'arquitectura valparaiso',
+    'valparaíso arquitectos',
     'regularización de viviendas',
     'levantamientos 3D',
     'drones arquitectura',
@@ -45,7 +49,9 @@ export const metadata: Metadata = {
     'DOM',
     'OGUC',
     'fotogrametría',
-    'modelo 3D'
+    'modelo 3D',
+    'arquitectura región de valparaiso',
+    'diseño de interiores valparaiso'
   ],
   authors: [{ name: 'Luckas Gajardo' }],
   creator: 'Luckas Gajardo',
@@ -70,7 +76,7 @@ export const metadata: Metadata = {
     description: defaultDescription,
     images: [
       {
-        url: `${siteUrl}/img/og-image.jpg`,
+        url: `${siteUrl}/img/imgog.jpeg`,
         width: 1200,
         height: 630,
         alt: 'LuckasArq - Arquitectura y Diseño',
@@ -97,10 +103,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: siteUrl,
-    languages: {
-      'es-CL': siteUrl,
-      'en': `${siteUrl}/en`,
-    },
   },
   verification: {
     // Agregar cuando tengas Google Search Console

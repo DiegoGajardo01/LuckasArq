@@ -30,12 +30,19 @@ export default function StructuredData() {
       address: {
         '@type': 'PostalAddress',
         addressCountry: 'CL',
-        addressLocality: 'Chile',
+        addressLocality: 'Valparaíso',
+        addressRegion: 'Valparaíso',
       },
-      areaServed: {
-        '@type': 'Country',
-        name: 'Chile',
-      },
+      areaServed: [
+        {
+          '@type': 'State',
+          name: 'Región de Valparaíso',
+        },
+        {
+          '@type': 'Country',
+          name: 'Chile',
+        }
+      ],
       serviceType: [
         'Diseño Arquitectónico',
         'Diseño de Interiores',
@@ -44,7 +51,7 @@ export default function StructuredData() {
         'Proyectos Eléctricos SEC'
       ],
       priceRange: '$$',
-      telephone: '+54 9 11 1234-5678',
+      telephone: '+56 9 1234 5678',
       email: 'contacto@luckasarq.com',
       sameAs: [
         'https://www.instagram.com/luckas.arq'
@@ -68,7 +75,7 @@ export default function StructuredData() {
       ],
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+54-9-11-1234-5678',
+        telephone: '+56-9-1234-5678',
         contactType: 'customer service',
         areaServed: 'CL',
         availableLanguage: ['Spanish', 'English']

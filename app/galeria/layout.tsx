@@ -22,7 +22,12 @@ export const metadata: Metadata = {
     'renders profesionales',
     'arquitectura moderna chile',
     'diseño de casas',
-    'proyectos arquitectónicos realizados'
+    'proyectos arquitectónicos realizados',
+    'arquitecto valparaiso',
+    'arquitectos valparaiso',
+    'arquitectura valparaiso',
+    'portfolio arquitectura valparaiso',
+    'proyectos valparaiso'
   ],
   openGraph: {
     title: "Galería de Proyectos Arquitectónicos - Portfolio Visual | LuckasArq",
@@ -48,10 +53,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: `${siteUrl}/galeria`,
-    languages: {
-      'es-CL': `${siteUrl}/galeria`,
-      'en-US': `${siteUrl}/en/galeria`,
-    },
   },
   robots: {
     index: true,

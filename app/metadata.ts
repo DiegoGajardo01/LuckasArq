@@ -7,6 +7,10 @@ export const homeMetadata: Metadata = {
   description: "Luckas Gajardo, arquitecto chileno especializado en diseño arquitectónico, diseño de interiores, regularización de viviendas, levantamientos 3D con drones y proyectos eléctricos SEC. Servicios profesionales de arquitectura en Chile.",
   keywords: [
     'arquitecto chileno',
+    'arquitecto valparaiso',
+    'arquitectos valparaiso',
+    'arquitectura valparaiso',
+    'valparaíso arquitectos',
     'diseño arquitectónico',
     'diseño de interiores',
     'regularización de viviendas',

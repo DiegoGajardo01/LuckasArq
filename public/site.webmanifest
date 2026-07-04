@@ -1,0 +1,19 @@
+{
+  "name": "LuckasArq - Arquitectura y Diseño",
+  "short_name": "LuckasArq",
+  "description": "Servicios profesionales de arquitectura, diseño de interiores, regularización de viviendas, levantamientos 3D y proyectos eléctricos SEC en Chile.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9f9f9",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["business", "design"],
+  "lang": "es-CL",
+  "orientation": "portrait-primary"
+}
